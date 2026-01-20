@@ -5,21 +5,21 @@
 class Graft < Formula
   desc "Agentless deployment tool extending Docker Compose to cloud via SSH"
   homepage "https://github.com/skssmd/graft"
-  version "2.2.3"
+  version "2.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skssmd/Graft/releases/download/v2.2.3/Graft_2.2.3_Darwin_amd64.tar.gz"
-      sha256 "b68848c8370a3cdfa66a3a22d308d8079e96cbf2dc646242dbb3604e684cbcb8"
+      url "https://github.com/skssmd/Graft/releases/download/v2.3.1/Graft_2.3.1_Darwin_amd64.tar.gz"
+      sha256 "933ea0d2b0aa3e9c8aab90e4c7b3ac8c2ffb1fd218b29f5dfe6ebc5a821772a8"
 
       def install
         bin.install "graft"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skssmd/Graft/releases/download/v2.2.3/Graft_2.2.3_Darwin_arm64.tar.gz"
-      sha256 "2cca57d299572a389110d7f69544960a7d6897f87f243273fc1bdc52b5b4c7af"
+      url "https://github.com/skssmd/Graft/releases/download/v2.3.1/Graft_2.3.1_Darwin_arm64.tar.gz"
+      sha256 "a12b564fe2a386296c165d117d6efda3e3cc0175646b3c2b87e45c13863d918f"
 
       def install
         bin.install "graft"
@@ -29,15 +29,15 @@ class Graft < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skssmd/Graft/releases/download/v2.2.3/Graft_2.2.3_Linux_amd64.tar.gz"
-      sha256 "6b233490fa05608c59375df48ae2198f83f4616bed15b1b2a592fa836e9ca07b"
+      url "https://github.com/skssmd/Graft/releases/download/v2.3.1/Graft_2.3.1_Linux_amd64.tar.gz"
+      sha256 "c95c3b555360e31ce84e1383057ce8e8f69b3f7dfbcd29139cb7a6a39f6e10ab"
       def install
         bin.install "graft"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skssmd/Graft/releases/download/v2.2.3/Graft_2.2.3_Linux_arm64.tar.gz"
-      sha256 "9a78142e01b0a9dfbb36c433aacae6f8785f435b0652b788c29986875002d8bb"
+      url "https://github.com/skssmd/Graft/releases/download/v2.3.1/Graft_2.3.1_Linux_arm64.tar.gz"
+      sha256 "c3e0ecb1b8f031fe26c3b5bff33f7e19ac0da064c8d8030832d0dbca7584ecff"
       def install
         bin.install "graft"
       end
