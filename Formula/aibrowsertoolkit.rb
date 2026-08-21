@@ -1,19 +1,19 @@
 class Aibrowsertoolkit < Formula
   desc "Browser API for AI agents, over HTTP"
   homepage "https://github.com/skssmd/Ai-Browser-Toolkit"
-  version "0.1.2"
+  version "0.1.21"
   license "Apache-2.0"
 
   # arm64 macOS only. macos-13 is GitHub's last Intel image and is being
   # retired, so the matrix stopped building macos-x86_64 -- and a formula with
   # an on_intel block pointing at an asset that is never built fails at
   # download time with no explanation. This refuses up front and says why.
-  # Intel Macs are served by `pipx install aibrowsertoolkit`.
+  # Intel Macs are served by `pipx install ai-browser-toolkit`.
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/skssmd/Ai-Browser-Toolkit/releases/download/v0.1.2/aibrowsertoolkit-0.1.2-macos-arm64.tar.gz"
-  sha256 "f19a4a04bb7e03b19cf47cb9c7f51eadbd2fcf49d368a541981086f7aa23c553"
+  url "https://github.com/skssmd/Ai-Browser-Toolkit/releases/download/v0.1.21/aibrowsertoolkit-0.1.21-macos-arm64.tar.gz"
+  sha256 "6e772dde43c05e24af8911a6f06f42c06848a10c1feac03612b828bb21655370"
 
   def install
     libexec.install Dir["*"]
