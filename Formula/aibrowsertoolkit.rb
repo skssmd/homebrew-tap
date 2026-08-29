@@ -1,7 +1,7 @@
 class Aibrowsertoolkit < Formula
   desc "Agentic browser automation CLI for AI agents"
   homepage "https://github.com/skssmd/Ai-Browser-Toolkit"
-  version "0.3.4"
+  version "0.3.5"
   license "Apache-2.0"
 
   # arm64 macOS only. macos-13 is GitHub's last Intel image and is being
@@ -12,8 +12,8 @@ class Aibrowsertoolkit < Formula
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/skssmd/Ai-Browser-Toolkit/releases/download/v0.3.4/aibrowsertoolkit-0.3.4-macos-arm64.tar.gz"
-  sha256 "f67697d6749b1b16779c319814a7ce3254caf5094fe1dd20a4c6492407cb020c"
+  url "https://github.com/skssmd/Ai-Browser-Toolkit/releases/download/v0.3.5/aibrowsertoolkit-0.3.5-macos-arm64.tar.gz"
+  sha256 "3b1ba46592c0b80f0a2ddd996f8c3fa8096baab2ce6cb3a7e20c966aaaeeb869"
 
   def install
     libexec.install Dir["*"]
