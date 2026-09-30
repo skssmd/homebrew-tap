@@ -1,7 +1,7 @@
 class Aibrowsertoolkit < Formula
   desc "Agentic browser automation CLI for AI agents"
   homepage "https://github.com/skssmd/Ai-Browser-Toolkit"
-  version "0.7.4"
+  version "0.7.5"
   license "Apache-2.0"
 
   # arm64 macOS only. macos-13 is GitHub's last Intel image and is being
@@ -12,8 +12,8 @@ class Aibrowsertoolkit < Formula
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/skssmd/Ai-Browser-Toolkit/releases/download/v0.7.4/aibrowsertoolkit-0.7.4-macos-arm64.tar.gz"
-  sha256 "7d67155cf9d8200728394afa6289eb1af49fece92f7104eb26122b834a9ec1b7"
+  url "https://github.com/skssmd/Ai-Browser-Toolkit/releases/download/v0.7.5/aibrowsertoolkit-0.7.5-macos-arm64.tar.gz"
+  sha256 "dcba69ddc77b821bcfda8c8766c245b550bc4570b7c9511b6d78c68ad92ea066"
 
   def install
     libexec.install Dir["*"]
@@ -27,6 +27,9 @@ class Aibrowsertoolkit < Formula
 
       It drives an existing Google Chrome or Microsoft Edge and bundles
       neither. `abt doctor --install-browser` will fetch Chrome via Homebrew.
+
+      To put the desktop app in ~/Applications (Launchpad, Spotlight, the Dock):
+        abt shortcut
 
       To start the server at logon:
         abt autostart install --browser chrome
